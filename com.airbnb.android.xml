@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.airbnb.android">
+  <intent classname="cn.jpush.android.api.NotificationHelper" id="43" methodname="deliveryDeveloperPushNotification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call java.lang.StringBuilder.toString():java.lang.String [public java.lang.StringBuilder.toString():java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>app</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.NOTIFICATION_TYPE</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.NOTIFICATION_DEVELOPER_ARG0</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call java.util.Iterator.next():java.lang.Object [public java.util.LinkedHashMap$KeyIterator.next():java.lang.Object,public java.util.IdentityHashMap$KeyIterator.next():java.lang.Object,public java.util.WeakHashMap$KeyIterator.next():java.lang.Object,public java.util.HashMap$KeyIterator.next():java.lang.Object,public volatile synthetic java.util.EnumMap$KeyIterator.next():java.lang.Object,public java.util.AbstractMap$1$1.next():java.lang.Object]</info>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.ALERT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.api.NotificationHelper" id="40" methodname="deliveryDeveloperPushNotification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>cn.jpush.android.intent.NOTIFICATION_OPENED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>cn.jpush.android.ALERT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call java.util.Iterator.next():java.lang.Object [public java.util.LinkedHashMap$KeyIterator.next():java.lang.Object,public java.util.IdentityHashMap$KeyIterator.next():java.lang.Object,public java.util.WeakHashMap$KeyIterator.next():java.lang.Object,public java.util.HashMap$KeyIterator.next():java.lang.Object,public volatile synthetic java.util.EnumMap$KeyIterator.next():java.lang.Object,public java.util.AbstractMap$1$1.next():java.lang.Object]</info>
+        </taintelement>
+        <taintelement>
+          <key>app</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.NOTIFICATION_DEVELOPER_ARG0</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.imagepicker.ImagePickerModule" id="51" methodname="launchCamera" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.media.action.IMAGE_CAPTURE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>output</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.util.AndroidUtil" id="61" methodname="showPermanentNotification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>cn.jpush.android.intent.NOTIFICATION_OPENED_PROXY</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>currency_change</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>toastText</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.helpers.PushMessageProcessor" id="60" methodname="processBasicEntity" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>msg_id</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>senderId</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>message</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>appId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.service.DownloadService" id="66" methodname="downloadEndNotification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>currency_change</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>cn.jpush.android.intent.NOTIFICATION_INSTALL_CLICKED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>body</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.util.AndroidUtil" id="67" methodname="getIntentForStartPushActivity" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>currency_change</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>cn.jpush.android.ui.PushActivity</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>body</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.api.NotificationHelper" id="78" methodname="sendNotificationReceivedBroadcast" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>cn.jpush.android.intent.NOTIFICATION_RECEIVED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call java.util.Iterator.next():java.lang.Object [public java.util.LinkedHashMap$KeyIterator.next():java.lang.Object,public java.util.IdentityHashMap$KeyIterator.next():java.lang.Object,public java.util.WeakHashMap$KeyIterator.next():java.lang.Object,public java.util.HashMap$KeyIterator.next():java.lang.Object,public volatile synthetic java.util.EnumMap$KeyIterator.next():java.lang.Object,public java.util.AbstractMap$1$1.next():java.lang.Object]</info>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.HTML_RES</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.NOTIFICATION_DEVELOPER_ARG0</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.HTML_PATH</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.util.AndroidUtil" id="74" methodname="getIntentForStartPopWin" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>currency_change</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>body</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.facebook.react.modules.share.ShareModule" id="84" methodname="share" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="cn.jpush.android.util.AndroidUtil" id="83" methodname="sendBroadcastToApp" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>cn.jpush.android.intent.MESSAGE_RECEIVED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>cn.jpush.android.MSG_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.MESSAGE</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.APPKEY</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.CONTENT_TYPE</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.EXTRA</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>cn.jpush.android.TITLE</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+</androidapplication>

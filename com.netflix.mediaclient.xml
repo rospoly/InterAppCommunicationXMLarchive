@@ -1,0 +1,1334 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.netflix.mediaclient">
+  <intent classname="com.netflix.mediaclient.service.user.UserAgent" id="5" methodname="logoutUser" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PUSH_ONLOGOUT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>sid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>nid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationBuilder" id="20" methodname="getNotificationOpenedIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.VIEW</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>originator</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="23" methodname="getResumeIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_RESUME</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="29" methodname="reportSurveyEnded" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_SURVEY_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>surveyType</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UIViewLogUtils" id="31" methodname="sendImpressionBroadcast" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>model</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="30" methodname="getPauseIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_PAUSE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="32" methodname="movieMetaDataAvailable" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_MOVIEMETADATA_AVAILABLE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="38" methodname="sendVolumeUpdateBroadcast" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_SETVOLUME</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.falkor.CachedModelProxy$SetVideoRatingTask" id="36" methodname="notifyUserRatingChanged" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.falkor.ACTION_NOTIFY_OF_RATINGS_CHANGE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>extra_video_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pservice.PServiceWidgetAgent" id="42" methodname="getWidgetPlayIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PLAY_1_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PLAY_3_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PLAY_2_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>videoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.IkoLogUtils" id="44" methodname="reportIkoMomentEnded" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_IKO_MOMENT_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>momentType</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>momentId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.IkoLogUtils" id="53" methodname="reportIkoVideoLoadStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_IKO_VIDEO_LOAD_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="61" methodname="reportEditProfileActionEnded" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_EDIT_PROFILE_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>profile_name</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="68" methodname="dialogShow" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_DIALOGSHOW</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>stringBlob</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="64" methodname="getStopIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_STOP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.preapp.PreAppAgentDataHandler" id="77" methodname="createIntentToPService" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>videoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="72" methodname="error" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_ERROR</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>errorDesc</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="73" methodname="dialogCancel" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_DIALOGCANCEL</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>stringBlob</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pservice.PServiceWidgetAgent" id="75" methodname="getWidgetDetailsIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.DETAILS_3_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.DETAILS_1_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.DETAILS_2_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>videoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="86" methodname="getSkipbackIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_SKIP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="81" methodname="reportSurveyQuestionEnded" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_SURVEY_QUESTION_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>question</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent$Utils" id="102" methodname="createIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="96" methodname="playbackEnd" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_PLAYBACKEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>postplayState</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="119" methodname="postplayState" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_POSTPLAY</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>postplayState</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="118" methodname="audiosub" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_AUDIOSUB</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>stringBlob</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationBuilder" id="114" methodname="getNotificationOpenedIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.VIEW</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>originator</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="156" methodname="reportShareSheetOpenActionStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_SHARE_SHEET_OPEN_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.search.SearchActivity" id="145" methodname="search" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEARCH</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>query</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="146" methodname="abortPinVerification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PIN_VERIFICATION_NOT_REQUIRED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="169" methodname="state" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_STATE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>currentState</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="168" methodname="movieMetaData" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_MOVIEMETADA</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>catalogId</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>episodeId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationBuilder" id="174" methodname="getNotificationOpenedIntentForBrowserRedirect" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>originator</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>target_url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="160" methodname="requestPinVerification" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.PIN_VERIFICATION_SHOW</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>title</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>ancestorVideoType</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="167" methodname="reportDeleteProfileActionStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_DELETE_PROFILE_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>profile_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="184" methodname="simplePlaybackState" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_SIMPLE_PLAYBACKSTATE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>postplayState</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="190" methodname="createIntentForPushNotificationAgent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 3 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>swiped_notification_id</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>target_url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.logging.search.utils.SearchLogUtils" id="176" methodname="reportSearchImpression" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_SUS_FOCUS_SEARCH_IMPRESSION</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>reference</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.PostPlayMediaButtonHandler" id="177" methodname="stopMDXTarget" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_STOP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.iris.notifications.type.BaseNotification$1onBoxArtFetched" id="180" methodname="onResponse" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>swiped_notification_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="196" methodname="getPlayNextIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_PLAY_VIDEOIDS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UIViewLogUtils" id="195" methodname="reportUIViewCommandStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIVIEW_CMD_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>model</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.mdx.MdxReceiver$FetchPostPlayForPlaybackCallback" id="219" methodname="onEpisodeDetailsFetched" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MINI_PLAYER_POST_PLAY_TITLE_NEXT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pdslogging.PdsLoggingUtils" id="209" methodname="sendIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>getstatic com.netflix.mediaclient.service.pdslogging.PdsDownloadSessionManager.EXTRA_ERROR_CODE:java.lang.String [public static com.netflix.mediaclient.service.pdslogging.PdsDownloadSessionManager.EXTRA_ERROR_CODE:java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>getstatic com.netflix.mediaclient.service.pdslogging.PdsDownloadSessionManager.EXTRA_ERROR_MESSAGE:java.lang.String [public static com.netflix.mediaclient.service.pdslogging.PdsDownloadSessionManager.EXTRA_ERROR_MESSAGE:java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.ApmLogUtils" id="239" methodname="reportDataRequestStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_APM_DATA_REQUEST_STARTED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.android.activity.NetflixActivity" id="232" methodname="showMDXPostPlayOnResume" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MINI_PLAYER_POST_PLAY_TITLE_NEXT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationBuilder" id="227" methodname="getNotificationCanceledIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>originator</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="226" methodname="playbackStart" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_PLAYBACKSTART</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.logging.search.utils.SearchLogUtils" id="249" methodname="reportSearchSessionStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_SUS_SEARCH_SESSION_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>term</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="272" methodname="reportAddProfileActionEnded" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_ADD_PROFILE_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>profile_name</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.common.ExportDebugData" id="276" methodname="export" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND_MULTIPLE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.STREAM</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.GCMIntentService" id="283" methodname="createIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>reg_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pservice.PServiceWidgetAgent" id="281" methodname="getWidgetRefreshIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.REFRESH_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>videoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="256" methodname="capability" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_CAPABILITY</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>stringBlob</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.ClientNotifier" id="267" methodname="metaData" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDXUPDATE_METADATA</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>stringBlob</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pservice.PServiceWidgetAgent" id="265" methodname="getWidgetHomeIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.HOME_FROM_PREAPP_WIDGET</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>videoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.PostPlayMediaButtonHandler" id="306" methodname="playNextVideo" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_PLAY_VIDEOIDS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="294" methodname="reportSearchActionStarted" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_SEARCH_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>term</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.util.log.UserActionLogUtils" id="296" methodname="reportEndPostPlay" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.LOG_UIA_POSTPLAY_ENDED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>chosenVideoId</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.launch.NetflixComLaunchActivity" id="371" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.search.SearchActivity" id="363" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.RemoteControlClientManager$MediaButtonIntentHandlerProxy" id="415" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MEDIA_BUTTON</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.profiles.RestrictedProfilesReceiver" id="468" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.GET_RESTRICTION_ENTRIES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="550" methodname="handlePlay" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="551" methodname="handleBrowserRedirectNotification" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="548" methodname="markSocialNotificationAsRead" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="549" methodname="handleMdp" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="546" methodname="createIntentForPushNotificationAgent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="547" methodname="handleSdp" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="552" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.pushnotification.NotificationReceiver" id="553" methodname="handleCanceledNotification" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_PLAY</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_MOVIE_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_CANCELED</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_IRIS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_SHOW_DETAILS</inaction>
+        <inaction>com.netflix.mediaclient.intent.action.NOTIFICATION_BROWSER_REDIRECT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gcm.GCMBroadcastReceiver" id="513" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+        <inaction>com.google.android.c2dm.intent.REGISTRATION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.InstallReferrerReceiver" id="522" methodname="handleInstallation" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.InstallReferrerReceiver" id="523" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.user.PartnerReceiver" id="541" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.USER_STATUS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.user.PartnerReceiver" id="540" methodname="handleUsertatus" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.netflix.mediaclient.intent.action.USER_STATUS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.job.NetworkChangeReceiver" id="543" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.search.SearchActivity" id="618" methodname="onNewIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.search.SearchActivity" id="619" methodname="handleNewIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.search.SearchActivity" id="620" methodname="isVoiceSearch" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.service.mdx.MdxAgent" id="592" methodname="handleCommand" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_RESUME</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.netflix.mediaclient.intent.action.MDX_PAUSE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uuid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.launch.NetflixComLaunchActivity" id="660" methodname="handleIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.netflix.mediaclient.ui.launch.NetflixComLaunchActivity" id="661" methodname="onNewIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

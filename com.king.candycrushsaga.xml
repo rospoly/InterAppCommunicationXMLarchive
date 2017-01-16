@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.king.candycrushsaga">
+  <intent classname="com.facebook.internal.NativeProtocol" id="1" methodname="createPlatformServiceIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.facebook.platform.PLATFORM_SERVICE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.facebook.platform.protocol.METHOD_ARGS</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.facebook.platform.protocol.BRIDGE_ARGS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.facebook.ProfileManager" id="10" methodname="sendCurrentProfileChangedBroadcast" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.facebook.sdk.ACTION_CURRENT_PROFILE_CHANGED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.facebook.sdk.EXTRA_OLD_PROFILE</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.facebook.sdk.EXTRA_NEW_PROFILE</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.gcm.GoogleCloudMessaging" id="13" methodname="zza" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gcm.intent.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>google.from</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.facebook.internal.NativeProtocol" id="22" methodname="findActivityIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.facebook.platform.protocol.BRIDGE_ARGS</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.facebook.platform.protocol.METHOD_ARGS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" id="26" methodname="zza" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.facebook.AccessTokenManager" id="29" methodname="sendCurrentAccessTokenChangedBroadcast" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.facebook.sdk.EXTRA_OLD_ACCESS_TOKEN</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.facebook.sdk.EXTRA_NEW_ACCESS_TOKEN</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.auth.api.signin.internal.zzd" id="28" methodname="zznc" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.auth.GOOGLE_SIGN_IN</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>config</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" id="31" methodname="zzb" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.iid.InstanceID</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GSF</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.king.core.VideoPlayerActivity" id="44" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.king.core.ReferrerReceiver" id="50" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.king.candycrushsaga.CandyCrushSagaActivity" id="48" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.king.core.GCMBroadcastReceiver" id="73" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.amazon.device.iap.ResponseReceiver" id="109" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.amazon.inapp.purchasing.NOTIFY</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

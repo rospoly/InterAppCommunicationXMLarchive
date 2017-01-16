@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.nianticlabs.pokemongo">
+  <intent classname="com.google.android.gms.internal.zzfb" id="23" methodname="createIntent" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.EDIT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>description</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>eventLocation</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" id="24" methodname="zza" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" id="51" methodname="zzb" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.iid.InstanceID</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GSF</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.upsight.android.analytics.internal.referrer.InstallReferrerReceiver" id="73" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.upsight.android.googlepushservices.internal.PushBroadcastReceiver" id="117" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.upsight.android.analytics.internal.dispatcher.schema.NetworkChangeBroadcastReceiver" id="125" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.android.vending">
+  <intent classname="com.google.android.finsky.setup.SetupWizardSelectDeviceActivity" id="1" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>SetupWizardRestoreAppsActivity.backup_device_infos_bundle</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.googlehelp.GoogleHelp" id="2" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.android.gms.googlehelp.HELP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>EXTRA_GOOGLE_HELP</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.navigationmanager.c" id="8" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>AppStreamingActivity.document</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.navigationmanager.a" id="13" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>account</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>mediaDoc</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.installer.a.m" id="14" methodname="f" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.android.launcher.action.INSTALL_SHORTCUT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.shortcut.NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.INTENT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.LightPurchaseFlowActivity" id="16" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>LightPurchaseFlowActivity.account</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>LightPurchaseFlowActivity.doc</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.vr.VrPurchaseActivity" id="20" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>VrPurchaseActivity.purchaseParams</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.billingprofile.BillingProfileActivity" id="24" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>BillingProfileActivity.docid</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>BillingProfileActivity.prefetchedBillingProfile</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.auth.GaiaAuthActivity" id="50" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GaiaAuthActivity_extraParams</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>GaiaAuthActivity_authState</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.firebase.iid.c" id="63" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.billingprofile.BillingProfileActivity" id="66" methodname="finish" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>StoreLocatorActivity.storeLocatorDetails</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.account.h" id="74" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>CancelSubscriptionDialog.dialog</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.PackageWarningDialog" id="131" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>app_name</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.navigationmanager.d" id="155" methodname="onClick" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GiftingActivity.action</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.LightPurchaseFlowActivity" id="171" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>AskToDownloadActivity.challenge</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>AskToDownloadActivity.document</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver" id="174" methodname="b" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.firebase.INSTANCE_ID_EVENT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>wrapped_intent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.v" id="162" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>authAccount</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.family.b" id="167" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>manageKIntent</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>manageMemberIntent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.PurchaseActivity" id="187" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>PurchaseActivity.appDownloadSizeWarningArgs</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>PurchaseActivity.params</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>PurchaseActivity.account</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.LightPurchaseFlowActivity" id="202" methodname="t" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>OfferResolutionActivity.doc</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.AppsPermissionsActivity" id="216" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>AppsPermissionsActivity.doc</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.PinEntryDialog" id="215" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>PinEntryDialog.extraParams</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.PinEntryDialog" id="208" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>PinEntryDialog.extraParams</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.iab.c" id="239" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>PurchaseActivity.params</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.firebase.iid.c" id="230" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.googlehelp.internal.common.i" id="229" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.googlehelp.HELP</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>EXTRA_TOGGLING_DATA</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.widget.f" id="226" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>dfeToc</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call java.lang.StringBuilder.toString():java.lang.String [public java.lang.StringBuilder.toString():java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>name_0</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.v" id="224" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>array_titles</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>array_delivery_tokens</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>install_details</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>array_packages</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>array_app_icon_urls</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.addresschallenge.AddressChallengeActivity" id="249" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>extra_parameters</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>challenge</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.RateReviewActivity" id="246" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>author</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.vr.VrPurchaseActivity" id="242" methodname="m" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>purchaseIntent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.utils.dx" id="274" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>error_html_message</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>error_title</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.firebase.iid.c" id="279" methodname="b" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.SetupWizardSelectAppsForDeviceActivity" id="280" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>SetupWizardSelectAppsForDeviceActivity.backup_app_for_device_bundle</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.wear.WearChangeListenerService" id="258" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>changed_uri_list</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>deleted_uri_list</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.AppsPermissionsActivity" id="304" methodname="h" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>AppsPermissionsActivity.appDownloadSizeWarningArguments</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.redeem.RedeemCodeActivity" id="293" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>RedeemCodeActivity.docid</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.widget.recommendation.h" id="303" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>viewIntent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.PackageVerificationActivity" id="337" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.INSTALL_PACKAGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.SettingsActivity" id="347" methodname="onResume" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MANAGE_NETWORK_USAGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.SettingsActivity" id="345" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MANAGE_NETWORK_USAGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.family.b" id="326" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 3 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>manageKIntent</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>manageMemberIntent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.ScreenshotsActivity" id="325" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>document</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.c" id="321" methodname="a" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>backup_document_infos_bundle</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.finsky.services.ReviewsService" id="369" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.reviews.IReviewsService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.BillingService" id="368" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.IBillingService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.AppCrashProxy" id="356" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.APP_ERROR</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.android.vending.AssetBrowserActivity" id="358" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+        <inaction>com.google.android.finsky.VIEW_MY_DOWNLOADS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.SettingsActivity" id="353" methodname="onResume" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MANAGE_NETWORK_USAGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.promptforfop.d" id="364" methodname="a" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>PromptForFopBaseActivity.account</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.finsky.services.PlayAfwAppService" id="367" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.BIND_PLAY_AFW_APP_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.wallet.redirect.FinishAndroidAppRedirectActivity" id="360" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.setupwizard.PaymentsOptionalStepShimActivity" id="361" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.autoupdate.ReschedulerUsingBroadcast$WifiBroadcastReceiver" id="363" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.wifi.STATE_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.safemode.SafeModeDownloadBroadcastReceiver" id="408" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.installapi.PlayInstallService" id="415" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.BIND_PLAY_INSTALL_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.AccountsChangedReceiver" id="402" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.accounts.LOGIN_ACCOUNTS_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.services.MarketCatalogService" id="403" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.services.IMarketCatalogService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.setupwizard.SetupWizardPaymentsAccountChangeBroadcastReceiver" id="385" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.accounts.LOGIN_ACCOUNTS_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.iab.InAppBillingService" id="391" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.InAppBillingService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.widget.consumption.NowPlayingWidgetProvider" id="390" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.PACKAGE_CHANGED</inaction>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+        <inaction>com.android.launcher.action.APPWIDGET_DEFAULT_WORKSPACE_CONFIGURE</inaction>
+        <inaction>com.android.vending.action.APPWIDGET_UPDATE_CONSUMPTION_DATA</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.ClearCacheReceiver" id="388" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.LOCALE_CHANGED</inaction>
+        <inaction>android.net.conn.BACKGROUND_DATA_SETTING_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.BootCompletedReceiver" id="443" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gcm.GCMBroadcastReceiver" id="447" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+        <inaction>com.google.android.c2dm.intent.REGISTRATION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.services.DetailsService" id="433" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.details.IDetailsService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.ServerNotificationReceiver" id="436" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.iab.FirstPartyInAppBillingService" id="437" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.FirstPartyInAppBillingService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.c" id="438" methodname="c" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.TosAckedReceiver" id="429" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.TOS_ACKED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.services.PackageUpdateService" id="430" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.BIND_PACKAGE_UPDATE_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.ConsumptionAppDataChangedReceiver" id="420" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.play.CONTENT_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.MainActivity" id="478" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>afwapp.android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.SEARCH</inaction>
+        <inaction>com.google.android.finsky.DETAILS</inaction>
+        <inaction>com.google.android.gms.actions.SEARCH_ACTION</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.MainActivity" id="479" methodname="onNewIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>afwapp.android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.SEARCH</inaction>
+        <inaction>com.google.android.finsky.DETAILS</inaction>
+        <inaction>com.google.android.gms.actions.SEARCH_ACTION</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.LaunchUrlHandlerActivity" id="476" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.LaunchUrlHandlerActivity" id="475" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.LightPurchaseFlowActivity" id="470" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.PURCHASE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.LightPurchaseFlowActivity" id="469" methodname="b" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.PURCHASE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.download.DownloadBroadcastReceiver" id="466" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETE</inaction>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETED</inaction>
+        <inaction>android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.download.DownloadBroadcastReceiver" id="465" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETE</inaction>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETED</inaction>
+        <inaction>android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.PlaySetupService" id="462" methodname="onStartCommand" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.setup.IPlaySetupService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.setup.PlaySetupService" id="461" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.setup.IPlaySetupService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdService" id="459" methodname="b" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>wrapped_intent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.firebase.INSTANCE_ID_EVENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdService" id="458" methodname="a" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>wrapped_intent</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.firebase.INSTANCE_ID_EVENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdService" id="457" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.firebase.INSTANCE_ID_EVENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdService" id="456" methodname="e" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.firebase.INSTANCE_ID_EVENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdService" id="455" methodname="d" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.firebase.INSTANCE_ID_EVENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.PackageMonitorReceiver$RegisteredReceiver" id="449" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE</inaction>
+        <inaction>android.intent.action.PACKAGE_CHANGED</inaction>
+        <inaction>android.intent.action.PACKAGE_ADDED</inaction>
+        <inaction>android.intent.action.PACKAGE_REMOVED</inaction>
+        <inaction>android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE</inaction>
+        <inaction>android.intent.action.PACKAGE_FIRST_LAUNCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.LocationProviderChangedReceiver" id="493" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.location.MODE_CHANGED</inaction>
+        <inaction>android.location.PROVIDERS_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.autoupdate.ReschedulerUsingBroadcast$PowerBroadcastReceiver" id="495" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.ACTION_POWER_CONNECTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.RemoveAssetReceiver" id="489" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.family.setup.FamilySetupActivity" id="488" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.family.SETUP</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.payments.a" id="490" methodname="a" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>instrument_manager_args</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.MainActivity" id="480" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>afwapp.android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.SEARCH</inaction>
+        <inaction>com.google.android.finsky.DETAILS</inaction>
+        <inaction>com.google.android.gms.actions.SEARCH_ACTION</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.zapp.PlayModuleService" id="544" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.finsky.BIND_PLAY_MODULE_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.SettingsActivity" id="559" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MANAGE_NETWORK_USAGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.iab.MarketBillingService" id="566" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.MarketBillingService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.lightpurchase.c.n" id="561" methodname="a" type="PARAMETER">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gsf.action.GET_GLS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>purchaseFlowConfig</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.finsky.receivers.UpdateWidgetsReceiver" id="518" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.accounts.LOGIN_ACCOUNTS_CHANGED</inaction>
+        <inaction>com.google.android.finsky.action.TOC_SET</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.activities.InlineAppDetailsDialog" id="524" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.finsky.APP_DETAILS_DIALOG</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.firebase.iid.FirebaseInstanceIdReceiver" id="527" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+        <inaction>com.google.android.c2dm.intent.REGISTRATION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.PackageVerificationReceiver" id="533" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.PACKAGE_NEEDS_VERIFICATION</inaction>
+        <inaction>com.google.android.finsky.action.TOC_SET</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.PackageVerificationApiService" id="540" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.vending.verifier.ACTION_PACKAGE_VERIFICATION_API</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.ConsentDialog" id="593" methodname="onNewIntent" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.vending.verifier.REQUEST_CONSENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.ConsentDialog" id="592" methodname="b" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.vending.verifier.REQUEST_CONSENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.vending.verifier.ConsentDialog" id="594" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.vending.verifier.REQUEST_CONSENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.services.LicensingService" id="596" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.licensing.ILicensingService</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.services.ContentFiltersService" id="601" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.contentfilters.IContentFiltersService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.finsky.billing.BillingAccountService" id="602" methodname="onBind" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.IBillingAccountService.BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

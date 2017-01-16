@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="edu.mit.icc_unresolvable_intent">
+  <intent classname="edu.mit.icc_unresolvable_intent.OutFlowActivity" id="1" methodname="onCreate" type="NEW">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call edu.mit.icc_unresolvable_intent.OutFlowActivity.randomString():java.lang.String [edu.mit.icc_unresolvable_intent.OutFlowActivity.randomString():java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>DroidBench</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="edu.mit.icc_unresolvable_intent.InFlowActivity2" id="2" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>edu.mit.icc_unresolvable_intent.EDIT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="edu.mit.icc_unresolvable_intent.InFlowActivity" id="3" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>edu.mit.icc_unresolvable_intent.ACTION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

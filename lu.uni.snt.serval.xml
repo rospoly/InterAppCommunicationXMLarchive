@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="lu.uni.snt.serval">
+  <intent classname="lu.uni.snt.serval.IntentSource1" id="1" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="lu.uni.snt.serval.IntentSource1" id="2" methodname="onActivityResult" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

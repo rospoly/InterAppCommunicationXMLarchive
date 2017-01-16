@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="edu.mit.icc_intent_passed_through_api">
+  <intent classname="edu.mit.icc_intent_passed_through_api.IsolateActivity" id="2" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>edu.mit.icc_intent_passed_through_api.EDIT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="edu.mit.icc_intent_passed_through_api.InFlowActivity" id="3" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>edu.mit.icc_intent_passed_through_api.ACTION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>
