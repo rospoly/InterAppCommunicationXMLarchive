@@ -1,57 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.skype.raider">
-  <intent classname="com.skype.android.app.signin.SignoutEducationActivity" id="2" methodname="onClick" type="NEW">
+  <intent classname="com.skype.android.app.Navigation" id="6" methodname="getCalendarIntent" type="NEW">
     <outputcommunication>
       <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>android.intent.extra.TITLE</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.beaconscan.service.CollectionService" id="3" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>BeaconScanSettings</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.Navigation" id="14" methodname="getCalendarIntent" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
         <outaction>
           <action>android.intent.action.INSERT</action>
           <info/>
@@ -66,338 +16,9 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.signin.LinkingAccountsAnimationActivity" id="16" methodname="goToNext" type="NEW">
+  <intent classname="com.skype.android.app.media.MediaPhotoViewerActivity" id="39" methodname="getShareIntent" type="NEW">
     <outputcommunication>
       <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>username</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.onlineid.ui.AddAccountActivity" id="20" methodname="b" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.ADD_ACCOUNT</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_state</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>com.microsoft.onlineid.app_properties</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.onlineid.ui.SignOutActivity" id="23" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_state</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.crash.RestartExceptionHandler" id="25" methodname="uncaughtException" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>android.intent.action.APP_ERROR</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>android.intent.extra.BUG_REPORT</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.spice.SpiceUtil" id="38" methodname="sendCreditAndSubscriptions" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>creditInfo</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>subs</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.beaconscan.service.a.a" id="42" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>BeaconScanSettings</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.Navigation" id="45" methodname="launchInviteFriendsToSkype" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>android.intent.action.SEND</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>android.intent.extra.TITLE</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>android.intent.extra.SUBJECT</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.settings.SettingsFragment" id="52" methodname="setNotificationOptions" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>android.intent.extra.TITLE</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.chat.ChatFragment$13" id="59" methodname="onGranted" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>android.media.action.IMAGE_CAPTURE</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>output</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.google.android.gms.ads.internal.purchase.c" id="76" methodname="onServiceConnected" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>INAPP_DATA_SIGNATURE</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>INAPP_PURCHASE_DATA</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.LinkingTermsOfUseActivity" id="75" methodname="goBack" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>suggestedAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.LinkingAbstractActivity" id="85" methodname="signInDiffSkypeAccount" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>loginAccessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.LinkingPickSuggestedAccountsActivity" id="87" methodname="nextIntent" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>suggestedAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.media.MediaPhotoViewerActivity" id="81" methodname="getShareIntent" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
         <outaction>
           <action>android.intent.action.SEND</action>
           <info/>
@@ -412,415 +33,7 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.chat.ChatFragment" id="83" methodname="onCreate" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>contactName</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.dialer.MasterCallHistoryFragment" id="82" methodname="onItemClick" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>identity</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.beaconscan.service.a.a" id="102" methodname="b" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>BeaconScanSettings</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.vim.VideoMessageReviewActivity" id="100" methodname="onShare" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>android.intent.action.SEND</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>android.intent.extra.SUBJECT</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>android.intent.extra.STREAM</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.onlineid.internal.ui.WebFlowActivity" id="101" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.PICK_ACCOUNT</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>***</action>
-          <info>Destination class not reachable: load 2 of type java.lang.String</info>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.microsoft.onlineid.app_properties</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.chat.ChangeGroupPictureDialog" id="98" methodname="onPictureMessagePermissionGranted" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>android.media.action.IMAGE_CAPTURE</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>output</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.LinkingSkypeNamesFoundActivity" id="96" methodname="pickSuggestedAccounts" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>suggestedAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>loginAccessToken</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.msa.SignInLiveIdActivity" id="113" methodname="accountsLinking" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>suggestedAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.msa.AuthenticateWithMsaActivity" id="127" methodname="accountsLinking" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>loginAccessToken</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.signin.msa.SignInLiveIdActivity" id="121" methodname="accountsLinking" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.dialer.NewDialpadFragment" id="139" methodname="onClick" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>***</key>
-          <info>getstatic com.skype.android.app.contacts.ContactAddNumberActivity.EXTRA_COUNTRY_CODE:java.lang.String [public static com.skype.android.app.contacts.ContactAddNumberActivity.EXTRA_COUNTRY_CODE:java.lang.String]</info>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.microsoft.onlineid.ui.AddAccountActivity" id="140" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.SIGN_UP_ACCOUNT</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_state</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>com.microsoft.onlineid.app_properties</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.NavigationUrl" id="130" methodname="getIntentForCommunityPage" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>url</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.SkypeIntentHandler" id="133" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>JOIN_SOURCE</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>JOIN_HASH</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>JOIN_HOST</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>android.intent.extra.STREAM</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.google.android.gms.iid.d" id="157" methodname="b" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>com.google.android.gms.iid.InstanceID</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>GSF</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.dialer.DialpadFragment" id="146" methodname="onClick" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>***</key>
-          <info>getstatic com.skype.android.app.contacts.ContactAddNumberActivity.EXTRA_COUNTRY_CODE:java.lang.String [public static com.skype.android.app.contacts.ContactAddNumberActivity.EXTRA_COUNTRY_CODE:java.lang.String]</info>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.SkypeIntentHandler" id="148" methodname="a" type="NEW">
+  <intent classname="com.skype.android.SkypeIntentHandler" id="52" methodname="a" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
@@ -837,17 +50,9 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.ChangePictureDialogFragment" id="151" methodname="onClick" type="NEW">
+  <intent classname="com.skype.android.app.ChangePictureDialogFragment" id="56" methodname="onClick" type="NEW">
     <outputcommunication>
       <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
         <outaction>
           <action>android.intent.action.GET_CONTENT</action>
           <info/>
@@ -862,146 +67,115 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.NavigationUrl" id="173" methodname="getIntentForFeedbackPage" type="NEW">
+  <intent classname="com.skype.android.app.Navigation" id="85" methodname="launchAppChooserForEmail" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.intent.action.VIEW</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>url</key>
+          <key>android.intent.extra.SUBJECT</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.NavigationUrl" id="172" methodname="getIntentForUrl" type="NEW">
+  <intent classname="com.skype.android.app.vim.VideoMessageReviewActivity" id="83" methodname="onShare" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.intent.action.SEND</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>GO_PARAM_VALUE</key>
+          <key>android.intent.extra.SUBJECT</key>
           <info/>
         </taintelement>
         <taintelement>
-          <key>url</key>
+          <key>android.intent.extra.STREAM</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.microsoft.onlineid.internal.ui.AccountPickerActivity" id="162" methodname="a" type="NEW">
+  <intent classname="com.skype.android.SkypeIntentHandler" id="95" methodname="a" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
+          <action>android.intent.action.DIAL</action>
           <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.PICK_ACCOUNT</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>***</action>
-          <info>Destination class not reachable: load 2 of type java.lang.String</info>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>com.microsoft.onlineid.app_properties</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>***</key>
-          <info>call com.microsoft.onlineid.internal.ui.AccountPickerActivity$a.a():java.lang.String [public final com.microsoft.onlineid.internal.ui.AccountPickerActivity$a.a():java.lang.String]</info>
-        </taintelement>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_state</key>
+          <key>android.intent.extra.STREAM</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.calling.CallReminderHelper" id="167" methodname="createCallReminderNotification" type="NEW">
+  <intent classname="com.skype.android.crash.RestartExceptionHandler" id="152" methodname="uncaughtException" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.intent.action.APP_ERROR</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>ExtraCallReminderContactName</key>
+          <key>android.intent.extra.BUG_REPORT</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.account.CustomizeRingtoneDialog" id="178" methodname="onClick" type="NEW">
+  <intent classname="com.google.android.gms.iid.d" id="154" methodname="b" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>android.intent.action.RINGTONE_PICKER</action>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>android.intent.extra.ringtone.EXISTING_URI</key>
+          <key>registration_id</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.google.android.gms.internal.dv" id="183" methodname="b" type="NEW">
+  <intent classname="com.google.android.gms.iid.d" id="169" methodname="b" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
+          <action>com.google.android.gms.iid.InstanceID</action>
           <info/>
         </outaction>
-        <outaction>
-          <action>SHOW</action>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GSF</key>
           <info/>
-        </outaction>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication exists="true" exported="true"/>
+  </intent>
+  <intent classname="com.google.android.gms.internal.dv" id="168" methodname="b" type="NEW">
+    <outputcommunication>
+      <outactions>
         <outaction>
           <action>android.intent.action.EDIT</action>
           <info/>
@@ -1020,189 +194,70 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.Navigation" id="201" methodname="intentFor" type="NEW">
+  <intent classname="com.skype.android.app.chat.ChangeGroupPictureDialog" id="160" methodname="onPictureMessagePermissionGranted" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>android.intent.action.VIEW</action>
+          <action>android.media.action.IMAGE_CAPTURE</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>com.skype.identitiy</key>
+          <key>output</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.app.signin.LinkingSkypeNamesFoundActivity" id="202" methodname="pickSuggestedAccounts" type="NEW">
+  <intent classname="com.skype.android.app.account.CustomizeRingtoneDialog" id="204" methodname="onClick" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.intent.action.RINGTONE_PICKER</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>refreshToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>suggestedAccounts</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>accessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>loginAccessToken</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>microsoftAccounts</key>
+          <key>android.intent.extra.ringtone.EXISTING_URI</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.skype.android.SkypeIntentHandler" id="220" methodname="a" type="NEW">
+  <intent classname="com.skype.android.app.chat.ChatFragment$13" id="214" methodname="onGranted" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>android.intent.action.DIAL</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.media.action.IMAGE_CAPTURE</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>android.intent.extra.STREAM</key>
+          <key>output</key>
           <info/>
         </taintelement>
       </taintedness>
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="net.hockeyapp.android.tasks.CheckUpdateTaskWithUI" id="222" methodname="startUpdateIntent" type="NEW">
+  <intent classname="com.skype.android.app.Navigation" id="224" methodname="launchInviteFriendsToSkype" type="NEW">
     <outputcommunication>
       <outactions>
         <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.PICK_ACCOUNT</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>***</action>
-          <info>Destination class not reachable: load 2 of type java.lang.String</info>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>json</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>url</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.Navigation" id="223" methodname="toAddBot" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
+          <action>android.intent.action.SEND</action>
           <info/>
         </outaction>
       </outactions>
       <taintedness>
         <taintelement>
-          <key>com.skype.identitiy</key>
+          <key>android.intent.extra.TITLE</key>
           <info/>
         </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.google.android.gms.iid.d" id="212" methodname="b" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.google.android.c2dm.intent.REGISTER</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>registration_id</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.Navigation" id="209" methodname="launchAppChooserForEmail" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>android.intent.action.VIEW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
         <taintelement>
           <key>android.intent.extra.SUBJECT</key>
           <info/>
@@ -1211,78 +266,7 @@
     </outputcommunication>
     <inputcommunication exists="true" exported="true"/>
   </intent>
-  <intent classname="com.microsoft.onlineid.internal.ui.InterruptResolutionActivity" id="211" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>com.microsoft.onlineid.internal.PICK_ACCOUNT</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>***</action>
-          <info>Destination class not reachable: load 2 of type java.lang.String</info>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_package_name</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>com.microsoft.onlineid.cobranding_id</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>com.microsoft.onlineid.client_state</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.spice.SpiceActivity" id="235" methodname="onCreate" type="RECEIVED">
-    <outputcommunication/>
-    <inputcommunication exists="true" exported="true">
-      <inactions>
-        <inaction>android.intent.action.VIEW</inaction>
-        <inaction>android.intent.action.CALL</inaction>
-      </inactions>
-    </inputcommunication>
-  </intent>
-  <intent classname="com.microsoft.beaconscan.service.a" id="224" methodname="a" type="NEW">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>BeaconScanSettings</key>
-          <info/>
-        </taintelement>
-        <taintelement>
-          <key>LocationChanged</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication exists="true" exported="true"/>
-  </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="286" methodname="startLandingPageActivity" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="240" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1296,7 +280,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="307" methodname="onCreate" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="259" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1310,7 +294,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="300" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="306" methodname="startLandingPageActivity" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1324,7 +308,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="337" methodname="autoLoginDefaultAccount" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="309" methodname="autoLoginDefaultAccount" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1338,7 +322,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="322" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="323" methodname="autoLoginDefaultAccount" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1352,7 +336,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="328" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="333" methodname="startLandingPageActivity" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1366,7 +350,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="377" methodname="startLandingPageActivity" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="354" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1380,7 +364,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="366" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="402" methodname="onCreate" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1394,7 +378,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="386" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="396" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1408,7 +392,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="384" methodname="autoLoginDefaultAccount" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="390" methodname="skipToNextActivity" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1422,7 +406,16 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="416" methodname="startActivityForIntent" type="RECEIVED">
+  <intent classname="com.skype.android.app.spice.SpiceActivity" id="432" methodname="onCreate" type="RECEIVED">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.CALL</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.skype.android.app.main.SplashActivity" id="419" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1436,7 +429,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.app.main.SplashActivity" id="420" methodname="skipToNextActivity" type="RECEIVED">
+  <intent classname="com.skype.android.app.main.SplashActivity" id="457" methodname="startActivityForIntent" type="RECEIVED">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1450,45 +443,15 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.push.RegisterReceiver" id="473" methodname="onReceive" type="PARAMETER">
+  <intent classname="com.skype.android.config.partner.CampaignReceiver" id="512" methodname="onReceive" type="PARAMETER">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
-        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
-        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.google.android.gms.iid.d" id="552" methodname="b" type="PARAMETER">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>registration_id</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication/>
-  </intent>
-  <intent classname="com.skype.android.app.calling.SeamlessCapabilityReceiver" id="570" methodname="onReceive" type="PARAMETER">
-    <outputcommunication/>
-    <inputcommunication exists="true" exported="true">
-      <inactions>
-        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
-      </inactions>
-    </inputcommunication>
-  </intent>
-  <intent classname="com.skype.android.push.gcm.GCMBroadcastReceiver" id="568" methodname="onReceive" type="PARAMETER">
+  <intent classname="com.skype.android.push.gcm.GCMBroadcastReceiver" id="525" methodname="onReceive" type="PARAMETER">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1497,36 +460,7 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.google.android.gms.ads.internal.purchase.GInAppPurchaseManagerInfoParcel" id="517" methodname="a" type="PARAMETER">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.google.android.gms.ads.internal.purchase.InAppPurchaseManagerInfo</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication/>
-  </intent>
-  <intent classname="com.skype.android.config.partner.CampaignReceiver" id="527" methodname="onReceive" type="PARAMETER">
-    <outputcommunication/>
-    <inputcommunication exists="true" exported="true">
-      <inactions>
-        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
-      </inactions>
-    </inputcommunication>
-  </intent>
-  <intent classname="com.microsoft.onlineid.internal.sso.service.MsaSsoService" id="532" methodname="onBind" type="PARAMETER">
+  <intent classname="com.microsoft.onlineid.internal.sso.service.MsaSsoService" id="535" methodname="onBind" type="PARAMETER">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1534,7 +468,39 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.service.GetAccountReceiver" id="541" methodname="onReceive" type="PARAMETER">
+  <intent classname="com.skype.android.audio.BluetoothReceiver" id="529" methodname="a" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.media.SCO_AUDIO_STATE_CHANGED</inaction>
+        <inaction>android.bluetooth.adapter.action.STATE_CHANGED</inaction>
+        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
+        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
+        <inaction>android.media.SCO_AUDIO_STATE_UPDATED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.skype.android.audio.BluetoothReceiver" id="528" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.media.SCO_AUDIO_STATE_CHANGED</inaction>
+        <inaction>android.bluetooth.adapter.action.STATE_CHANGED</inaction>
+        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
+        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
+        <inaction>android.media.SCO_AUDIO_STATE_UPDATED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.skype.android.app.calling.SeamlessCapabilityReceiver" id="531" methodname="onReceive" type="PARAMETER">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.skype.android.service.GetAccountReceiver" id="622" methodname="onReceive" type="PARAMETER">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
@@ -1542,49 +508,13 @@
       </inactions>
     </inputcommunication>
   </intent>
-  <intent classname="com.skype.android.audio.BluetoothReceiver" id="631" methodname="onReceive" type="PARAMETER">
+  <intent classname="com.skype.android.push.RegisterReceiver" id="597" methodname="onReceive" type="PARAMETER">
     <outputcommunication/>
     <inputcommunication exists="true" exported="true">
       <inactions>
-        <inaction>android.media.SCO_AUDIO_STATE_CHANGED</inaction>
-        <inaction>android.bluetooth.adapter.action.STATE_CHANGED</inaction>
-        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
-        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
-        <inaction>android.media.SCO_AUDIO_STATE_UPDATED</inaction>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
       </inactions>
     </inputcommunication>
-  </intent>
-  <intent classname="com.skype.android.audio.BluetoothReceiver" id="632" methodname="a" type="PARAMETER">
-    <outputcommunication/>
-    <inputcommunication exists="true" exported="true">
-      <inactions>
-        <inaction>android.media.SCO_AUDIO_STATE_CHANGED</inaction>
-        <inaction>android.bluetooth.adapter.action.STATE_CHANGED</inaction>
-        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
-        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
-        <inaction>android.media.SCO_AUDIO_STATE_UPDATED</inaction>
-      </inactions>
-    </inputcommunication>
-  </intent>
-  <intent classname="com.google.android.gms.ads.internal.overlay.AdOverlayInfoParcel" id="598" methodname="a" type="PARAMETER">
-    <outputcommunication>
-      <outactions>
-        <outaction>
-          <action>RESTORE</action>
-          <info/>
-        </outaction>
-        <outaction>
-          <action>SHOW</action>
-          <info/>
-        </outaction>
-      </outactions>
-      <taintedness>
-        <taintelement>
-          <key>com.google.android.gms.ads.inernal.overlay.AdOverlayInfo</key>
-          <info/>
-        </taintelement>
-      </taintedness>
-    </outputcommunication>
-    <inputcommunication/>
   </intent>
 </androidapplication>
