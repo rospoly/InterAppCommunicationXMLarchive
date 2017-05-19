@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.snapchat.android">
+  <intent classname="com.snapchat.android.deeplink.DeepLinkActivity" constr.line="-1" id="3" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

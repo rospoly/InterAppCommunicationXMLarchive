@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="it.vodafone.my190">
+  <intent classname="it.vodafone.my190.presentation.hybrid.d$4" constr.line="-1" id="4" methodname="run" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.EMAIL</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.vodafone.my190.pushibm.MyMceBroadcastReceiver" constr.line="-1" id="55" methodname="onNonMceBroadcast" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.ibm.mce.sdk.NOTIFIER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.vodafone.my190.model.sonda.DeviceBootReceiverSonda" constr.line="-1" id="58" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.vodafone.my190.pushibm.MyMceBroadcastReceiver" constr.line="-1" id="56" methodname="onIllegalNotification" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.ibm.mce.sdk.NOTIFIER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.vodafone.my190.widget.LightWidgetProvider" constr.line="-1" id="60" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+        <inaction>it.vodafone.my190.intent.action.STARTUP_FLOW_ENDED</inaction>
+        <inaction>it.vodafone.my190.intent.action.REFRESH_WIDGET</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

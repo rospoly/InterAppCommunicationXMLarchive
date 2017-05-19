@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.google.android.apps.photos">
+  <intent classname="com.google.android.apps.photos.pager.HostPhotoPagerActivity" constr.line="-1" id="53" methodname="h" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.camera.action.REVIEW</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.systemtray.NotificationSettingsActivity" constr.line="-1" id="52" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.debug.settings.TracingTokenQrCodeActivity" constr.line="-1" id="58" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.systemtray.NotificationSettingsActivity" constr.line="-1" id="60" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.mediastoresync.reset.impl.MediaStoreClearedReceiver" constr.line="-1" id="77" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.PACKAGE_DATA_CLEARED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.devicemanagement.service.DeviceManagementReceiver" constr.line="-1" id="74" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DEVICE_STORAGE_LOW</inaction>
+        <inaction>android.intent.action.DEVICE_STORAGE_OK</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.mediamonitor.AlarmReceiver" constr.line="-1" id="75" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.libraries.social.mediamonitor.FIRE_ALARM</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.service.GunsService" constr.line="-1" id="85" methodname="onStartCommand" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.NOTIFICATION_SELECTED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.SYSTEM_NOTIFICATION_DISMISSED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.installation.ANDROID_ACCOUNT_CHANGED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.SYNC_REGISTRATION_STATUS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.service.GunsService" constr.line="-1" id="84" methodname="onBind" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.libraries.social.notifications.impl.ACTOR_SELECTED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.NOTIFICATION_SELECTED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.SYSTEM_NOTIFICATION_DISMISSED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.installation.ANDROID_ACCOUNT_CHANGED</inaction>
+        <inaction>com.google.android.libraries.social.notifications.impl.SYNC_REGISTRATION_STATUS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.mediamonitor.MediaMonitor" constr.line="-1" id="87" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.hardware.action.NEW_VIDEO</inaction>
+        <inaction>android.hardware.action.NEW_PICTURE</inaction>
+        <inaction>com.android.camera.NEW_PICTURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.analytics.install.InstallReceiver" constr.line="-1" id="86" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.login.refresh.LoginRefreshWakefulBroadcastReceiver" constr.line="-1" id="82" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.editor.intents.EditActivity" constr.line="-1" id="92" methodname="a_" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.camera.action.CROP</inaction>
+        <inaction>android.intent.action.EDIT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.dbprocessor.impl.DatabaseProcessorReceiver" constr.line="-1" id="95" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.moviemaker.app.ApplicationEnabler$Receiver" constr.line="-1" id="88" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.gservices.intent.action.GSERVICES_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.account.refresh.receiver.AccountsChangedReceiver" constr.line="-1" id="91" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.accounts.LOGIN_ACCOUNTS_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.experiments.phenotype.full.PhenotypeUpdateBroadcastReceiver" constr.line="-1" id="102" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.phenotype.UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.LocaleChangeReceiver" constr.line="-1" id="98" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.LOCALE_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.actionqueue.SystemReceiver" constr.line="-1" id="108" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.scheduler.PowerReceiver" constr.line="-1" id="109" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BATTERY_OKAY</inaction>
+        <inaction>android.intent.action.ACTION_POWER_DISCONNECTED</inaction>
+        <inaction>android.intent.action.ACTION_POWER_CONNECTED</inaction>
+        <inaction>android.intent.action.BATTERY_LOW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.TimezoneChangeReceiver" constr.line="-1" id="118" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.TIMEZONE_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.camerashortcut.CameraShortcutBroadcastReceiver" constr.line="-1" id="113" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.hardware.action.NEW_VIDEO</inaction>
+        <inaction>android.hardware.action.NEW_PICTURE</inaction>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+        <inaction>com.android.camera.NEW_PICTURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.AppUpgradeReceiver" constr.line="-1" id="123" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.jobqueue.JobServiceBroadcastReceiver" constr.line="-1" id="120" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.net.conn.CONNECTIVITY_CHANGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.home.HomeActivity" constr.line="-1" id="136" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.jobscheduler.JobSchedulerOnBootComplete" constr.line="-1" id="129" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.backup.apiservice.PhotosBackupApiService" constr.line="-1" id="128" methodname="onBind" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.apps.photos.backup.apiservice.PHOTOS_BACKUP_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.photos.devicesetup.promo.DeviceManagementPromoBroadcastReceiver" constr.line="-1" id="130" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DEVICE_STORAGE_LOW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.jobscheduler.JobSchedulerOnPackageUpgrade" constr.line="-1" id="133" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.gcm.receiver.GcmReceiver" constr.line="-1" id="135" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.libraries.social.notifications.impl.BootCompletedReceiver" constr.line="-1" id="134" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

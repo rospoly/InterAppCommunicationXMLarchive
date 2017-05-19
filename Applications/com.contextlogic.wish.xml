@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.contextlogic.wish">
+  <intent classname="com.contextlogic.wish.activity.webview.WebViewFragment" constr.line="-1" id="94" methodname="processWebViewUrl" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.CC</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.EMAIL</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.orderhistory.OrderHistoryWebView" constr.line="-1" id="110" methodname="processWebViewUrl" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.CC</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.EMAIL</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.contextlogic.wish.link.DeepLinkManager" constr.line="-1" id="119" methodname="getIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.EMAIL</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.contextlogic.wish.receiver.DeviceIdReceiver" constr.line="-1" id="114" methodname="sendDeviceId" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.contextlogic.wish.DEVICE_ID</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>device_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.contextlogic.wish.util.IntentUtil" constr.line="-1" id="126" methodname="getShareIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.STREAM</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.browse.BrowseActivity" constr.line="-1" id="140" methodname="getGiftConfirmedProduct" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="158" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="170" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="173" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="172" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="166" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.browse.BrowseActivity" constr.line="-1" id="184" methodname="getSignupCart" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.link.DeepLinkActivity" constr.line="-1" id="191" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.receiver.InstallReceiver" constr.line="-1" id="207" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.receiver.DeviceIdReceiver" constr.line="-1" id="202" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.contextlogic.wish.DEVICE_ID</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.activity.facebook.WishFacebookDeepLinkActivity" constr.line="-1" id="198" methodname="handleOnCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.contextlogic.wish.notifications.push.PushNotificationReceiver" constr.line="-1" id="209" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.c2dm.intent.RECEIVE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

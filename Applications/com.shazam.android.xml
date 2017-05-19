@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.shazam.android">
+  <intent classname="com.shazam.android.activities.launchers.MainActivityLauncher" constr.line="-1" id="12" methodname="getAutoTaggingIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.shazam.android.intent.actions.START_AUTO_TAGGING</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>auto_tagging_origin</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.shazam.android.activities.launchers.MainActivityLauncher" constr.line="-1" id="42" methodname="getTaggingIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.shazam.android.intent.actions.START_TAGGING</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>origin</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.shazam.android.activities.visual.VisualShazamActivity" constr.line="-1" id="55" methodname="onActivityResult" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.shazam.android.activities.account.CheckEmailActivity" constr.line="-1" id="59" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.shazam.android.activities.MainActivity" constr.line="-1" id="62" methodname="handleDynamicLink" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>com.shazam.android.intent.actions.START_TAGGING</inaction>
+        <inaction>com.shazam.android.intent.actions.START_AUTO_TAGGING</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.shazam.android.activities.MainActivity" constr.line="-1" id="61" methodname="onActivityResult" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>com.shazam.android.intent.actions.START_TAGGING</inaction>
+        <inaction>com.shazam.android.intent.actions.START_AUTO_TAGGING</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.shazam.android.activities.MainActivity" constr.line="-1" id="60" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>com.shazam.android.intent.actions.START_TAGGING</inaction>
+        <inaction>com.shazam.android.intent.actions.START_AUTO_TAGGING</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.shazam.android.activities.details.MusicDetailsActivity" constr.line="-1" id="76" methodname="onActivityResult" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

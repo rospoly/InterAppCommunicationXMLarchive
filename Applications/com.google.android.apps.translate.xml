@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.google.android.apps.translate">
+  <intent classname="com.google.android.libraries.translate.speech.f" constr.line="-1" id="22" methodname="j_" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.speech.action.RECOGNIZE_SPEECH</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.speech.extra.LANGUAGE</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" constr.line="-1" id="56" methodname="onActivityResult" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.auth.VERIFY_ASSERTION</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>config</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.apps.translate.cards.TranslatedTextCard" constr.line="-1" id="65" methodname="a" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" constr.line="-1" id="67" methodname="onCreate" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.auth.LOGIN_PICKER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>config</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" constr.line="-1" id="89" methodname="onCreate" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.auth.GOOGLE_SIGN_IN</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>config</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="106" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="115" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.copydrop.CopyDropActivity" constr.line="-1" id="113" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.PROCESS_TEXT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="112" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.appinvite.PreviewActivity" constr.line="-1" id="125" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.appinvite.ACTION_PREVIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="124" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="120" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.copydrop.StartServiceReceiver" constr.line="-1" id="136" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.BOOT_COMPLETED</inaction>
+        <inaction>android.intent.action.MY_PACKAGE_REPLACED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateAPIReceiver" constr.line="-1" id="138" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.EDIT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.StorageReceiver" constr.line="-1" id="140" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MEDIA_UNMOUNTED</inaction>
+        <inaction>android.intent.action.MEDIA_EJECT</inaction>
+        <inaction>android.intent.action.MEDIA_REMOVED</inaction>
+        <inaction>android.intent.action.MEDIA_UNMOUNTABLE</inaction>
+        <inaction>android.intent.action.MEDIA_SHARED</inaction>
+        <inaction>android.intent.action.MEDIA_BAD_REMOVAL</inaction>
+        <inaction>android.intent.action.MEDIA_MOUNTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.copydrop.NotificationDismissReceiver" constr.line="-1" id="130" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>copydrop_action_dismiss</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.phenotype.PhenotypeBroadcastReceiver" constr.line="-1" id="154" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.phenotype.UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.location.TimezoneReceiver" constr.line="-1" id="170" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.TIMEZONE_CHANGED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.TranslateActivity" constr.line="-1" id="169" methodname="startActivityForResult" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.nfc.action.NDEF_DISCOVERED</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.analytics.tracking.android.CampaignTrackingReceiver" constr.line="-1" id="167" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.apps.translate.offline.OfflineDownloadReceiver" constr.line="-1" id="166" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.DOWNLOAD_COMPLETE</inaction>
+        <inaction>android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

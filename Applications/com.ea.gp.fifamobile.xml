@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.ea.gp.fifamobile">
+  <intent classname="com.ea.nimble.Utility" constr.line="-1" id="6" methodname="sendBroadcastSerializable" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 0 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call java.util.Iterator.next():java.lang.Object [public java.util.WeakHashMap$KeyIterator.next():java.lang.Object,public java.util.HashMap$KeyIterator.next():java.lang.Object,public java.util.LinkedHashMap$KeyIterator.next():java.lang.Object,public java.util.IdentityHashMap$KeyIterator.next():java.lang.Object]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.ea.nimble.Utility" constr.line="-1" id="11" methodname="sendBroadcast" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 0 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call java.util.Iterator.next():java.lang.Object [public java.util.WeakHashMap$KeyIterator.next():java.lang.Object,public java.util.HashMap$KeyIterator.next():java.lang.Object,public java.util.LinkedHashMap$KeyIterator.next():java.lang.Object,public java.util.IdentityHashMap$KeyIterator.next():java.lang.Object]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.ea.gp.fifamobile.FifaMainActivity" constr.line="-1" id="13" methodname="onCreateImpl" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.ea.nimble.tracking.ReferrerReceiver" constr.line="-1" id="25" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

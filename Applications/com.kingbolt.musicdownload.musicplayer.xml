@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.kingbolt.musicdownload.musicplayer">
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.f" constr.line="-1" id="17" methodname="handleMessage" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.viewpagerindicator.R.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.viewpagerindicator.R.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.viewpagerindicator.R.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.viewpagerindicator.R.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.e" constr.line="-1" id="23" methodname="handleMessage" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.kingbolt.musicdownload.musicplayer.q.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.q.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.q.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.q.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.coo.l.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.coo.l.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.p" constr.line="-1" id="27" methodname="handleMessage" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call com.google.android.gms.R.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.google.android.gms.R.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.d" constr.line="-1" id="31" methodname="onPrepared" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.kingbolt.musicdownload.musicplayer.coo.a.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.coo.a.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.coo.a.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.coo.a.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.internal.zzeo" constr.line="-1" id="43" methodname="createIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.EDIT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>description</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>eventLocation</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.i" constr.line="-1" id="46" methodname="onBufferingUpdate" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.kingbolt.musicdownload.musicplayer.g.v.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.v.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.g.v.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.v.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.actionbarsherlock.widget.SearchView" constr.line="-1" id="54" methodname="createIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>query</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>user_query</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.kingbolt.musicdownload.musicplayer.serev.t" constr.line="-1" id="63" methodname="run" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String [public static com.kingbolt.musicdownload.musicplayer.g.s.ALLATORIxDEMO(java.lang.String):java.lang.String]</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" constr.line="-1" id="64" methodname="zza" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.c2dm.intent.REGISTER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>registration_id</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.iid.zzc" constr.line="-1" id="76" methodname="zzb" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.iid.InstanceID</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>GSF</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+</androidapplication>

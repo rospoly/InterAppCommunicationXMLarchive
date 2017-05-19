@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="me.pou.app">
+  <intent classname="me.pou.app.App" constr.line="-1" id="2" methodname="d" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.STREAM</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="me.pou.app.App" constr.line="-1" id="5" methodname="b" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="me.pou.app.billing.google.v1.BillingReceiver" constr.line="-1" id="23" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.billing.IN_APP_NOTIFY</inaction>
+        <inaction>com.android.vending.billing.PURCHASE_STATE_CHANGED</inaction>
+        <inaction>com.android.vending.billing.RESPONSE_CODE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

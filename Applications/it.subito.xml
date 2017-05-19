@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="it.subito">
+  <intent classname="it.subito.services.ConfirmationMessageReceiver" constr.line="-1" id="5" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>it.subito.GOT_PHONE_VERIFY_CODE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>ai_confirm_code</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.subito.services.ConfirmationMessageReceiver" constr.line="-1" id="8" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.provider.Telephony.SMS_RECEIVED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.subito.activities.AdInsertNg" constr.line="-1" id="13" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.subito.activities.AdInsertNg" constr.line="-1" id="14" methodname="a" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

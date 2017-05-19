@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="it.telecomitalia.centodiciannove">
+  <intent classname="it.telecomitalia.centodiciannove.network.core.refactoring.CercaNegozioService" constr.line="-1" id="10" methodname="onHandleIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call android.os.Bundle.getString(java.lang.String):java.lang.String [public android.os.BaseBundle.getString(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>getstatic it.telecomitalia.centodiciannove.ui.activity.refactoring.command.CercaNegozioCommand.d:java.lang.String [public static it.telecomitalia.centodiciannove.ui.activity.refactoring.command.CercaNegozioCommand.d:java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>getstatic it.telecomitalia.centodiciannove.ui.activity.refactoring.command.CercaNegozioCommand.e:java.lang.String [public static it.telecomitalia.centodiciannove.ui.activity.refactoring.command.CercaNegozioCommand.e:java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>CERCA_NEGOZIO_MAP_HANDLER</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>CERCA_NEGOZIO_SHOP_LIST_HANDLER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.network.core.refactoring.TwitterServices" constr.line="-1" id="27" methodname="onHandleIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call android.os.Bundle.getString(java.lang.String):java.lang.String [public android.os.BaseBundle.getString(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>operator_list</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.network.core.refactoring.NetworkServices" constr.line="-1" id="34" methodname="onHandleIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call android.os.Bundle.getString(java.lang.String):java.lang.String [public android.os.BaseBundle.getString(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>network_services_parameter</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>network_services_handler</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.twitter.fragment.TwitterSendMessageFragment$6$1" constr.line="-1" id="59" methodname="onClick" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.media.action.IMAGE_CAPTURE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>output</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.network.core.refactoring.LoginService" constr.line="-1" id="58" methodname="onHandleIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: call android.os.Bundle.getString(java.lang.String):java.lang.String [public android.os.BaseBundle.getString(java.lang.String):java.lang.String]</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>network_services_handler</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.twitter.fragment.TwitterSendMessageFragment$8$1" constr.line="-1" id="63" methodname="onClick" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.media.action.IMAGE_CAPTURE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>output</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.chooser.ChooserActivity" constr.line="-1" id="76" methodname="a" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.chooser.ChooserActivity" constr.line="-1" id="74" methodname="a" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.widget.WidgetSettings" constr.line="-1" id="75" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>it.telecomitalia.centodiciannove.widget.WidgetProvider.ACTION_WIDGET_SETTINGS</inaction>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.home.NewHomeActivity" constr.line="-1" id="80" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.home.NewHomeActivity" constr.line="-1" id="83" methodname="onBackPressed" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.chooser.ChooserActivity" constr.line="-1" id="93" methodname="a" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.chooser.ChooserActivity" constr.line="-1" id="92" methodname="a" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.widgetnew.WidgetSettings4x2" constr.line="-1" id="89" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>.widgetnew.WidgetProvider4x2.ACTION_WIDGET_SETTINGS</inaction>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.widgetnew.WidgetProvider4x2" constr.line="-1" id="98" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.widget.WidgetProvider" constr.line="-1" id="122" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>it.telecomitalia.centodiciannove.widget.WidgetProvider.ACTION_WIDGET_REFRESH</inaction>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.telecomitalia.centodiciannove.ui.activity.refactoring.chooser.ChooserActivity" constr.line="-1" id="136" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.VIEW</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

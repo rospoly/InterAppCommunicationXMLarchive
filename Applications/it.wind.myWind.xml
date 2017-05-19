@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="it.wind.myWind">
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="141" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="140" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="152" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="153" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="155" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="157" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="158" methodname="populateSpinnerRopz" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="159" methodname="finish" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="144" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="146" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="148" methodname="finish" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiConfigurationActivity" constr.line="-1" id="151" methodname="finish" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="171" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiConfigurationActivity" constr.line="-1" id="170" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="169" methodname="populateSpinnerRopz" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="168" methodname="finish" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="175" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="173" methodname="populateSpinnerRopz" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="172" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="163" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="162" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.PayPalWebActivity" constr.line="-1" id="161" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="167" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetConfigurationActivity" constr.line="-1" id="165" methodname="populateSpinnerRopz" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="164" methodname="finish" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkConfigurationActivity" constr.line="-1" id="186" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="187" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="185" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkConfigurationActivity" constr.line="-1" id="188" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiConfigurationActivity" constr.line="-1" id="178" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiConfigurationActivity" constr.line="-1" id="179" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiConfigurationActivity" constr.line="-1" id="176" methodname="populateSpinnerMsisdn" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="177" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetConfigurationActivity" constr.line="-1" id="182" methodname="onResume" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_CONFIGURE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="183" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MainSlidingActivity" constr.line="-1" id="197" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetProvider" constr.line="-1" id="193" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.WidgetMultiProvider" constr.line="-1" id="194" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindTextWidgetDarkProvider" constr.line="-1" id="217" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetProvider" constr.line="-1" id="214" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="it.wind.myWind.MyWindWidgetDarkProvider" constr.line="-1" id="210" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.appwidget.action.APPWIDGET_UPDATE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

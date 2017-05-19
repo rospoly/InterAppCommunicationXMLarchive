@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.spotify.music">
+  <intent classname="com.spotify.mobile.android.ui.actions.LegacyPlayerActions" constr.line="-1" id="2" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.spotify.mobile.android.service.broadcast.session.PLAYBACK_ERROR</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>content_uri</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.ui.actions.LegacyPlayerActions" constr.line="-1" id="43" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.spotify.mobile.android.service.broadcast.session.PLAYBACK_ERROR</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>content_uri</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.share.util.MessengerUtil" constr.line="-1" id="49" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.facebook.orca.extra.APPLICATION_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.facebook.orca.extra.METADATA</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.collection.service.AnnotateService" constr.line="-1" id="58" methodname="c" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.spotify.mobile.android.spotlets.collection.service.AnnotateService.action.JOB_CHANGED</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>uri</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.shortcut.ShortcutInstallerService" constr.line="-1" id="64" methodname="onHandleIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.android.launcher.action.INSTALL_SHORTCUT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.shortcut.NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.INTENT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.ICON</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.waze.WazeService" constr.line="-1" id="81" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.spotify.music.internal.banner.WAZE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.spotify.music.internal.banner.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.spotify.mobile.android.sso.AuthorizationActivity" constr.line="-1" id="100" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.spotify.sso.action.START_AUTH_FLOW</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.airbiquity.AirbiquityBroadcastReceiver" constr.line="-1" id="121" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>HAP_BIND</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.bmw.registration.DisconnectedReceiver" constr.line="-1" id="132" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.spotify.mobile.android.spotlets.bmw.ACTION_DISCONNECTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.bmw.registration.ConnectedReceiver" constr.line="-1" id="159" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.spotify.mobile.android.spotlets.bmw.ACTION_CONNECTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.service.BluetoothServiceManager" constr.line="-1" id="149" methodname="a" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
+        <inaction>sdl.router.startservice</inaction>
+        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.service.BluetoothServiceManager" constr.line="-1" id="150" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.bluetooth.device.action.ACL_CONNECTED</inaction>
+        <inaction>sdl.router.startservice</inaction>
+        <inaction>android.bluetooth.device.action.ACL_DISCONNECTED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.appprotocol.service.AppProtocolRemoteService" constr.line="-1" id="164" methodname="onBind" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.spotify.mobile.appprotocol.action.START_APP_PROTOCOL_SERVICE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.spotify.mobile.android.spotlets.share.MessengerShareActivity" constr.line="-1" id="178" methodname="onActivityResult" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.PICK</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.superopt.cleaner">
+  <intent classname="com.superopt.cleaner.snsshare.a" constr.line="-1" id="11" methodname="a" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.STREAM</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>sms_body</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>content</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.superopt.cleaner.service.CoreService" constr.line="-1" id="53" methodname="onCreate" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.android.launcher.action.UNINSTALL_SHORTCUT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.shortcut.NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.INTENT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.superopt.cleaner.service.CoreService" constr.line="-1" id="52" methodname="onCreate" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.android.launcher.action.INSTALL_SHORTCUT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.shortcut.NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.INTENT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.shortcut.ICON_RESOURCE</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.superopt.cleaner.ui.BoostMainActivity" constr.line="-1" id="63" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.superopt.cleaner.receiver.PlayReceiver" constr.line="-1" id="74" methodname="a" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.superopt.cleaner.receiver.StartReceiver" constr.line="-1" id="75" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.USER_PRESENT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.superopt.cleaner.ui.BoostMainActivity" constr.line="-1" id="81" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

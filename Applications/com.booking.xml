@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.booking">
+  <intent classname="com.booking.manager.AffiliateManager" constr.line="-1" id="69" methodname="onReceive" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.android.vending.INSTALL_REFERRER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>

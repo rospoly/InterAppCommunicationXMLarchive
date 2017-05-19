@@ -1,0 +1,45 @@
+#The following names of applications correspond to the XML results of a set of popular applications downloaded from the MarketPlace.
+#These applications are used to find flows of sensitive data in an inter-application context.
+#The order is not important. Please report exactly the name of the XML contained in the repository.
+air.com.hypah.io.slither.xml
+com.Laxarus.TigerBall.xml
+com.alibaba.aliexpresshd.xml
+com.amazon.mShop.android.xml
+com.bitmango.rolltheballunrollme.xml
+com.booking.xml
+com.cmplay.tiles2.xml
+com.contextlogic.wish.xml
+com.ea.gp.fifamobile.xml
+com.gau.go.launcherex.xml
+com.google.android.apps.photos.xml
+com.google.android.apps.translate.xml
+com.google.android.play.games.xml
+com.kiloo.subwaysurf.xml
+com.king.candycrushsaga.xml
+com.kingbolt.musicdownload.musicplayer.xml
+com.lucaf.infotarga.xml
+com.lynxspa.youp2p.xml
+com.netflix.mediaclient.xml
+com.nianticlabs.pokemongo.xml
+com.nintendo.zara.xml
+com.perfecttapgames.chickenscream.xml
+com.pjmasks.moonlightheroes.xml
+com.shazam.android.xml
+com.snapchat.android.xml
+com.spotify.music.xml
+com.supercell.clashroyale.xml
+com.superopt.cleaner.xml
+com.twitter.android.xml
+com.waze.xml
+com.whatsapp.xml
+com.zeptolab.cats.google.xml
+com.zhiliaoapp.musically.xml
+fr.two4tea.fightlist.xml
+io.faceapp.xml
+it.h3g.areaclienti3.xml
+it.subito.xml
+it.telecomitalia.centodiciannove.xml
+it.vodafone.my190.xml
+it.wind.myWind.xml
+me.pou.app.xml
+org.telegram.messenger.xml

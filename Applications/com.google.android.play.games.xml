@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?><androidapplication name="com.google.android.play.games">
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="1" methodname="launchGame" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.LAUNCH_GAME</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.GamesSettingsDebugActivity" constr.line="-1" id="8" methodname="setSelectedServer" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.gservices.intent.action.GSERVICES_OVERRIDE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>call com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String [public final com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String [public final com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String [public final com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>***</key>
+          <info>call com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String [public final com.google.android.gms.common.config.GservicesValue.getKey():java.lang.String]</info>
+        </taintelement>
+        <taintelement>
+          <key>appstate.base_service_url</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>url:games.finsky_url</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.googlehelp.GoogleHelp" constr.line="-1" id="16" methodname="buildHelpIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.googlehelp.HELP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>EXTRA_GOOGLE_HELP</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="19" methodname="getPublicRequestListIntentRestrictedV2" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_PUBLIC_REQUESTS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_REQUEST_CLUSTER</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="28" methodname="viewAchievementDescription" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.ACTION_VIEW_ACHIEVEMENT_DESCRIPTION</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACHIEVEMENT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.restricted.videos.RestrictedStopCaptureActivity" constr.line="-1" id="34" methodname="getPendingIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.USER_STOP_HEADLESS_CAPTURE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="35" methodname="getPublicInvitationListIntentRestrictedV2" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.INVITATION_CLUSTER</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER_ID</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="36" methodname="getSelectSnapshotIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_SELECT_SNAPSHOT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.operations.video.FetchHeadlessCaptureEnabledOperation" constr.line="-1" id="40" methodname="getHeadlessAclPendingIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_HEADLESS_CAPTURE_PERMISSION</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="51" methodname="shareGame" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="61" methodname="createPlayStoreLightPurchaseFlowIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.android.finsky.APP_DETAILS_DIALOG</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>authAccount</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.popup.BasePopup" constr.line="-1" id="70" methodname="createProxyIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 1 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="64" methodname="getParticipantListIntentRestrictedV3" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.VIEW_PARTICIPANTS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.PARTICIPANTS</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.FEATURED_URI</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ICON_URI</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="78" methodname="getAchievementDescriptionIntentRestricted" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.VIEW_ACHIEVEMENT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACHIEVEMENT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailProfileComparisonFragment" constr.line="-1" id="73" methodname="onHeaderClicked" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.OTHER_PLAYER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="74" methodname="getVideoOverlayRecordingIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.VIDEO_DIALOG_LAUNCHER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="85" methodname="launchGoogleSettings" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_GOOGLE_SETTINGS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.common.oob.SignUp" constr.line="-1" id="87" methodname="newSignUpIntent" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.common.oob.OOB_SIGN_UP</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.common.oob.EXTRA_ACCOUNT_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="80" methodname="getPlayerSearchIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.PLAYER_SEARCH</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="92" methodname="prepForClient" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.FEATURE_NOT_AVAILABLE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_THEME_COLOR</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailProfileComparisonFragment" constr.line="-1" id="95" methodname="onHeaderClicked" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.OTHER_PLAYER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="103" methodname="viewMyProfile" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.VIEW_MY_PROFILE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="101" methodname="getYoutubeUploadIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>android.intent.action.SEND</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>android.intent.extra.TITLE</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.SUBJECT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.STREAM</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>android.intent.extra.TEXT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.signin.AccountSelectorFragment" constr.line="-1" id="98" methodname="onTransition" type="new Intent ()">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.common.account.CHOOSE_ACCOUNT_USERTILE</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.android.gms.common.account.CHOOSE_ACCOUNT</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>allowableAccountTypes</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.signin.SignInClient" constr.line="-1" id="110" methodname="connect" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.signin.service.START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.EXTRA_SIGNIN_OPTIONS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationMultiplayerInboxHelper" constr.line="-1" id="109" methodname="onInvitationClusterSeeMoreClicked" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.SHOW_PUBLIC_INVITATIONS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.INVITATION_CLUSTER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.ClientUiProxyActivity" constr.line="-1" id="104" methodname="launchProxyIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.CLIENT_PROXY</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.PROXY_INTENT</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.signin.service.SignInAuthenticator" constr.line="-1" id="105" methodname="getSignInService" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.signin.service.INTERNAL_START</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.signin.service.SignInInternalBrokerService.SCOPES</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.signin.service.SignInInternalBrokerService.PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.signin.service.SignInInternalBrokerService.SIGNIN_OPTIONS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.requests.DestinationRequestInboxHelper" constr.line="-1" id="127" methodname="onRequestClusterSeeMoreClicked" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.SHOW_PUBLIC_REQUESTS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_REQUEST_CLUSTER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="124" methodname="getLeaderboardIntentV3" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.VIEW_LEADERBOARD_SCORES</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="120" methodname="viewParticipantList" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.VIEW_PARTICIPANT_LIST</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.FEATURED_URI</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.ICON_URI</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.PARTICIPANTS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesNotificationManager" constr.line="-1" id="139" methodname="getDeleteIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.ACKNOWLEDGE_NOTIFICATIONS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.EXTRA_NOTIFICATION_IDS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesNotificationManager" constr.line="-1" id="140" methodname="createNotificationIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>***</action>
+          <info>Destination class not reachable: load 2 of type java.lang.String</info>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.ACCOUNT</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.PLAYER_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.EXTRA_NOTIFICATION_IDS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.common.permission.PermissionUtils" constr.line="-1" id="143" methodname="getRecoverPermissionIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.RECOVER_PERMISSION</action>
+          <info/>
+        </outaction>
+        <outaction>
+          <action>com.google.android.gms.RECOVER_WEAR_PERMISSION</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>***</key>
+          <info>open call java.util.Map$Entry.getKey():java.lang.Object []</info>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.common.images.ImageManager$LoadImageRunnable" constr.line="-1" id="132" methodname="run" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.common.images.LOAD_IMAGE</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.extras.resultReceiver</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.extras.uri</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="154" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.GamesSettingsActivity" constr.line="-1" id="157" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_GOOGLE_SETTINGS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.main.MainActivity" constr.line="-1" id="159" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_SHOP_GAMES_LIST</inaction>
+        <inaction>com.google.android.gms.games.destination.MAIN_ACTIVITY</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.util.UiUtils" constr.line="-1" id="144" methodname="viewProfileComparison" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.OTHER_PLAYER</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.operations.ValidateServiceConnectionOperation" constr.line="-1" id="148" methodname="getSignInIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SIGN_IN</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_ID</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.SCOPES</key>
+          <info/>
+        </taintelement>
+        <taintelement>
+          <key>com.google.android.gms.games.EXTRA_SIGNIN_OPTIONS</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesServiceBroker$GamesService" constr.line="-1" id="149" methodname="getSettingsIntent" type="new Intent (String)">
+    <outputcommunication>
+      <outactions>
+        <outaction>
+          <action>com.google.android.gms.games.SHOW_SETTINGS</action>
+          <info/>
+        </outaction>
+      </outactions>
+      <taintedness>
+        <taintelement>
+          <key>com.google.android.gms.games.GAME_PACKAGE_NAME</key>
+          <info/>
+        </taintelement>
+      </taintedness>
+    </outputcommunication>
+    <inputcommunication/>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.dialog.CaptureHeadlessPermissionActivity" constr.line="-1" id="170" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_HEADLESS_CAPTURE_PERMISSION</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.ClientPublicInvitationActivity" constr.line="-1" id="169" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.signin.SignInActivity" constr.line="-1" id="175" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SIGN_IN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.GamesSettingsDebugActivity" constr.line="-1" id="174" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_GOOGLE_DEBUG_SETTINGS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.common.players.ProfileSummaryActivity" constr.line="-1" id="173" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIEW_PROFILE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.videos.ClientMyVideosActivity" constr.line="-1" id="172" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIEW_MY_VIDEOS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.players.ClientPlayerSearchActivity" constr.line="-1" id="187" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.PLAYER_SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.SelectOpponentsActivity" constr.line="-1" id="190" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SELECT_OPPONENTS_REAL_TIME</inaction>
+        <inaction>com.google.android.gms.games.SELECT_OPPONENTS_TURN_BASED</inaction>
+        <inaction>com.google.android.gms.games.SELECT_PLAYERS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.RealTimeWaitingRoomActivity" constr.line="-1" id="191" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_REAL_TIME_WAITING_ROOM</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="177" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="182" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationParticipantListActivity" constr.line="-1" id="180" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PARTICIPANT_LIST</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationPublicInvitationActivity" constr.line="-1" id="207" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.restricted.videos.RestrictedVideoCapturedActivity" constr.line="-1" id="206" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIEW_VIDEO_CAPTURED</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.games.GameDetailActivity" constr.line="-1" id="200" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_DETAIL</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="197" methodname="onNewIntent" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationPublicInvitationActivity" constr.line="-1" id="196" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.games.DestinationGameSearchActivity" constr.line="-1" id="198" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="195" methodname="onNewIntent" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="194" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.inbox.DestinationInboxActivity" constr.line="-1" id="220" methodname="onUpPressed" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_INBOX</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="221" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.restricted.videos.RestrictedVideoRecordingOnboardingActivity" constr.line="-1" id="222" methodname="logAction" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_VIDEO_RECORDING_ONBOARDING</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.dialog.InterstitialVideoDialogLauncher" constr.line="-1" id="218" methodname="startVideoRecording" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIDEO_DIALOG_LAUNCHER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.videos.DestinationVideoRecordingOnboardingActivity" constr.line="-1" id="213" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_VIDEO_RECORDING_ONBOARDING</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.requests.ClientPublicRequestActivity" constr.line="-1" id="208" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_PUBLIC_REQUESTS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.leaderboards.ClientLeaderboardScoreActivity" constr.line="-1" id="209" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.ClientUiProxyActivity" constr.line="-1" id="210" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.CLIENT_PROXY</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.requests.DestinationRequestListActivity" constr.line="-1" id="211" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_REQUEST_LIST</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.main.MainActivity" constr.line="-1" id="239" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_SHOP_GAMES_LIST</inaction>
+        <inaction>com.google.android.gms.games.destination.MAIN_ACTIVITY</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationPublicInvitationActivity" constr.line="-1" id="238" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.leaderboards.ClientLeaderboardScoreActivity" constr.line="-1" id="236" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.requests.SendRequestActivity" constr.line="-1" id="235" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SEND_REQUEST</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.GamesSettingsActivity" constr.line="-1" id="234" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_GOOGLE_SETTINGS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="233" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="232" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.matches.DestinationMultiplayerListActivity" constr.line="-1" id="231" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_MULTIPLAYER_LIST</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.requests.DestinationPublicRequestActivity" constr.line="-1" id="230" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_PUBLIC_REQUESTS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.snapshots.ClientSnapshotListActivity" constr.line="-1" id="227" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_SELECT_SNAPSHOT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.ClientPublicInvitationActivity" constr.line="-1" id="225" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="224" methodname="onNewIntent" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.main.MainActivity" constr.line="-1" id="252" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_SHOP_GAMES_LIST</inaction>
+        <inaction>com.google.android.gms.games.destination.MAIN_ACTIVITY</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.dialog.InterstitialVideoDialogLauncher" constr.line="-1" id="253" methodname="onConnected" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.VIDEO_DIALOG_LAUNCHER</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.testcompat.ParcelTestCompatActivity" constr.line="-1" id="250" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.PARCEL_COMPAT</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="251" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.requests.ClientPublicRequestActivity" constr.line="-1" id="246" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_PUBLIC_REQUESTS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.requests.DestinationPublicRequestActivity" constr.line="-1" id="247" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.SHOW_PUBLIC_REQUESTS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.ClientPublicInvitationActivity" constr.line="-1" id="244" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_PUBLIC_INVITATIONS</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.leaderboards.DestinationLeaderboardScoreActivity" constr.line="-1" id="242" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_LEADERBOARD_SCORES</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.matches.ClientMultiplayerInboxActivity" constr.line="-1" id="243" methodname="onCreate" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.SHOW_INVITATIONS</inaction>
+        <inaction>com.google.android.gms.games.SHOW_MULTIPLAYER_INBOX</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="241" methodname="onNewIntent" type="Intent Received (getIntent)">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.client.players.ClientPlayerSearchActivity" constr.line="-1" id="267" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.PLAYER_SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.service.PlayGamesBridgeService" constr.line="-1" id="314" methodname="onBind" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.service.GAMES_BRIDGE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.main.MainActivity" constr.line="-1" id="288" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_SHOP_GAMES_LIST</inaction>
+        <inaction>com.google.android.gms.games.destination.MAIN_ACTIVITY</inaction>
+        <inaction>android.intent.action.MAIN</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.players.PlayerDetailActivity" constr.line="-1" id="294" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>com.google.android.gms.games.destination.VIEW_PROFILE_COMPARISON</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_MY_PROFILE</inaction>
+        <inaction>com.google.android.gms.games.destination.VIEW_GAME_COMPARISON_RECYCLER</inaction>
+        <inaction>com.google.android.gms.games.destination.ACCEPT_FRIEND_INVITE</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+  <intent classname="com.google.android.gms.games.ui.destination.games.DestinationGameSearchActivity" constr.line="-1" id="301" methodname="onNewIntent" type="Intent from Parameter">
+    <outputcommunication/>
+    <inputcommunication exists="true" exported="true">
+      <inactions>
+        <inaction>android.intent.action.SEARCH</inaction>
+      </inactions>
+    </inputcommunication>
+  </intent>
+</androidapplication>
